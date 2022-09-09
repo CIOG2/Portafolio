@@ -2,7 +2,6 @@
   --dark-color:  #0C1013;
 }
 
-
 *{
   box-sizing: border-box;
   padding: 0;
@@ -19,13 +18,15 @@ body{
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 100vh;
-//height: auto;
+  height: auto;
   min-height: 400px;
   background-color: var(--dark-color);
 }
 
 #__next{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   height: auto;
 }

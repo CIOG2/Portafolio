@@ -1,9 +1,10 @@
 import Styles from './styles.module.scss';
+import NavBar from './NavBar';
 
 const Header = () => {
     return(
-        <header className={Styles.calis}>
-        
+        <header className={Styles.header}>
+            <NavBar/>
         </header>
     )
 }
