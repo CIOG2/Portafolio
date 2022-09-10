@@ -1,5 +1,61 @@
 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 60px;
-    background-color: gray;
+}
+
+
+.navbar__container_Logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: auto;
+    height: 100%;
+}
+
+.logo{
+    font-size: 2.2rem;
+    font-weight: bold;
+    animation: fadeEfect 3s infinite;
+}
+
+.name{
+    font-size: 1.8rem;
+}
+
+.navbar__container_links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: auto;
+    height: 100%;
+}
+
+.link{
+    font-size: 1.8rem;
+    color: var(--text-gray);
+    will-change: all;
+    transition: all .5s;
+
+    &:hover {
+        color: var(--text-white);
+    }
+}
+
+
+@keyframes fadeEfect {
+    0%{
+        color: red;
+    }
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: green;
+    }
+    75%{
+        color: red;
+    }
 }
