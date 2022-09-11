@@ -7,6 +7,34 @@
 }
 
 
+.navbar__container_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 60px;
+}
+
+.logo__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.logo{
+    font-size: 2.4rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right bottom, #0066ff, #008fff, #00b0ff, #00cdff, #00e6ff);
+    background-clip: text;
+    color: transparent;  
+}
+
+
+
 .navbar__container_links{
     display: flex;
     align-items: center;
@@ -19,25 +47,9 @@
     font-size: 1.8rem;
     color: var(--text-gray);
     will-change: all;
-    transition: all .5s;
+    transition: all 1s;
 
     &:hover {
         color: var(--text-white);
-    }
-}
-
-
-@keyframes fadeEfect {
-    0%{
-        color: red;
-    }
-    25%{
-        color: yellow;
-    }
-    50%{
-        color: green;
-    }
-    75%{
-        color: red;
     }
 }

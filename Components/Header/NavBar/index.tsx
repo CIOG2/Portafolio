@@ -1,14 +1,14 @@
 import Styles from './styles.module.scss';
 
-
 const NavBar = () => {
-    
-    const letters = ['<','/','>']
     
     return(
         <nav className={Styles.navbar}>
-            <div className={Styles.navbar__container_Logo}>
-                <h3>
+            <div className={Styles.navbar__container_logo}>
+                <h3 className={Styles.logo__text}>
+                    <span className={Styles.logo}>
+                        {'</>'}
+                    </span>
                     CIOG
                 </h3>
             </div>
