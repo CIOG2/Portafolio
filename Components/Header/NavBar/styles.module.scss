@@ -7,24 +7,6 @@
 }
 
 
-.navbar__container_Logo{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    width: auto;
-    height: 100%;
-}
-
-.logo{
-    font-size: 2.2rem;
-    font-weight: bold;
-    animation: fadeEfect 3s infinite;
-}
-
-.name{
-    font-size: 1.8rem;
-}
-
 .navbar__container_links{
     display: flex;
     align-items: center;

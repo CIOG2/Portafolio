@@ -1,11 +1,4 @@
 import Styles from './styles.module.scss';
-import { EfectText } from "./EfectText";
-
-
-
-
-
-
 
 
 const NavBar = () => {
@@ -16,13 +9,6 @@ const NavBar = () => {
         <nav className={Styles.navbar}>
             <div className={Styles.navbar__container_Logo}>
                 <h3>
-                    {letters.map((letter, index) => {
-                        return <EfectText 
-                            key={index} 
-                            letter={letter} 
-                            index={index}
-                        />
-                    })}
                     CIOG
                 </h3>
             </div>
