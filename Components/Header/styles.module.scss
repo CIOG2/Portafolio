@@ -1,5 +1,11 @@
 .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     width: 95%;
-    height: 100px;
+    height: 100vh;
     max-width: 1400px;
+    min-height: 450px;
+    max-height: 1000px;
 }
