@@ -5,10 +5,12 @@ import DescriptionContent from './DescriptionContent';
 
 const Header = () => {
     return(
-        <header className={Styles.header}>
+        <header className={Styles['header']}>
             <NavBar/>
-            <Title/>
-            <DescriptionContent/>
+            <section className={Styles['header__section']}>
+                <Title/>
+                <DescriptionContent/>
+            </section>
         </header>
         )
     }

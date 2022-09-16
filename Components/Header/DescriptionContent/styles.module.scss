@@ -1,5 +1,89 @@
-.hola{
-    background-color: red;
-    width: 100px;
-    height: 100px;
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.section__container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+    max-width: 500px;
+    margin: 30px;
+}
+
+.section__container--description{
+    font-size: 2rem;
+}
+
+
+    
+// .section__container--button{
+//     width: 220px;
+//     height: 70px;
+//     font-size: 2rem;
+//     font-weight: 500;
+//     color: var(--text-white);
+//     border: none;
+//     border-radius: 50px;
+//     background-image: linear-gradient(to left, #7484fd, #b574e6, #dc64c7, #f35ba2, #fa5d7e);
+//     box-shadow: 0px 0px 20px 0px #fa5d7e96;
+//     cursor: pointer;
+// }
+
+
+.section__container--button {
+    /* From uiverse.io by @kirzin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 220px;
+    height: 60px;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    z-index: 1;
+    user-select: none;
+    animation: animation 16s linear infinite;
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+        background-size: 400%;
+        border-radius: 35px;
+        transition: 1s;
+        filter: blur(20px);
+    }
+}
+
+
+
+@keyframes animation {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 400%;
+    }
+    100% {
+        background-position: 0%;
+    }
 }
