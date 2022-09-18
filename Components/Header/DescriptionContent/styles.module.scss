@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 40px;
     width: 100%;
     height: auto;
 }
@@ -14,29 +15,16 @@
     align-items: center;
     width: 100%;
     height: auto;
-
-    max-width: 500px;
+    max-width: 600px;
     margin: 30px;
 }
 
 .section__container--description{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(220, 219, 219);
+    text-align: center;
 }
-
-
-    
-// .section__container--button{
-//     width: 220px;
-//     height: 70px;
-//     font-size: 2rem;
-//     font-weight: 500;
-//     color: var(--text-white);
-//     border: none;
-//     border-radius: 50px;
-//     background-image: linear-gradient(to left, #7484fd, #b574e6, #dc64c7, #f35ba2, #fa5d7e);
-//     box-shadow: 0px 0px 20px 0px #fa5d7e96;
-//     cursor: pointer;
-// }
 
 
 .section__container--button {
