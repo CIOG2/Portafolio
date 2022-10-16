@@ -1,7 +1,6 @@
 import Styles from './styles.module.scss';
 import NavBar from './NavBar';
 import Title from './Title';
-import DescriptionContent from './DescriptionContent';
 
 const Header = () => {
     return(
@@ -9,7 +8,21 @@ const Header = () => {
             <NavBar/>
             <section className={Styles['header__section']}>
                 <Title/>
-                <DescriptionContent/>
+                <div className={Styles['section__container']}>
+                    <p className={Styles['section__container--description']}>
+                        Hola soy Ivan un desarrollador web especializado en el front-end
+                    </p>
+                </div>
+                <div className={Styles['section__container']}>
+                    <a 
+                        className={Styles['section__container--button']}
+                        rel="noopener noreferrer"
+                        target = "_blank"
+                        href="https://drive.google.com/file/d/1KKdpfGbNIeLbHcgbchKrMalt7wD0JFvM/view?usp=sharing"
+                        >
+                        Curriculum Vitae
+                    </a>
+                </div>
             </section>
         </header>
         )
