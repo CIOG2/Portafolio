@@ -1,11 +1,3 @@
-.section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
 
 .section__container{
     display: flex;
@@ -23,7 +15,9 @@
     font-weight: 800;
     background-clip: text;
     color: transparent;  
-    background-image: linear-gradient(to right, #fb5d7f, #f25d8f, #e7609d, #d864aa, #c869b4, #c065bb, #b562c3, #a860cb, #9d54d6, #8e4ae3, #7742f0, #503cff);
+    background-size: 400%;
+    animation: animation 16s linear infinite;
+    background-image: linear-gradient(to right, #fb5d7f, #f8418e, #ee24a3, #d90bbd, #b51bd9, #d200ca, #e900ba, #fb00ab, #ff4d75, #ff8c55, #fbbe59, #fb5d7f, #f8418e, #ee24a3, #d90bbd, #b51bd9, #d200ca, #e900ba, #fb00ab, #ff4d75, #ff8c55, #fbbe59, #e0e786);
 }
 
 .title__text--2{
@@ -31,8 +25,25 @@
     font-weight: 800;
     background-clip: text;
     color: transparent;  
-    background-image: linear-gradient(to right, #523aff, #0063ff, #007fff, #0096ff, #00aaff, #00b9ff, #00c7fd, #0cd4f8, #34e1f0, #5aece7, #7ff6dc, #a3ffd3);
+    background-size: 400%;
+    animation: animation 19s linear infinite;
+    background-image: linear-gradient(to right, #523aff, #0080ff, #00a9ff, #00c9ff, #00e3e5, #2deed9, #56f7ca, #7dffb7, #61ff9e, #46ff80, #29ff5b, #00ff21, #0080ff, #00a9ff, #00c9ff, #00e3e5, #2deed9, #56f7ca, #7dffb7, #61ff9e, #46ff80, #29ff5b, #00ff21);
 }
+
+
+@keyframes animation {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+
 
 
 
@@ -68,6 +79,7 @@
        
     .title{
         line-height: 7rem;
+        text-align: center;
     }
 
 }
