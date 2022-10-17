@@ -1,11 +1,22 @@
 import Styles from './styles.module.scss';
 import NavBar from './NavBar';
 import Title from './Title';
+import MenuHamburguer from './MenuHamburguer';
+import { useState } from 'react';
 
 const Header = () => {
+
+    const [hamburguerActive, setHamburguerActive] = useState(false);
+
     return(
         <header className={Styles['header']}>
-            <NavBar/>
+            <NavBar
+                hamburguerActive = {hamburguerActive}
+                setHamburguerActive = {setHamburguerActive}
+            />
+            {hamburguerActive && (
+                <MenuHamburguer/>
+            )}
             <section className={Styles['header__section']}>
                 <Title/>
                 <div className={Styles['section__container']}>
