@@ -1,13 +1,14 @@
 import type { NextPage } from 'next'
-import Header from "../Components/Header";
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import Header from '../Components/Header';
+import Main from '../Components/Main';
 
 const Home: NextPage = () => {
   return (
-      <Header/>
-    )
+    <div id = 'APP'>
+          <Header/>
+          <Main/>
+    </div>
+  )
 }
 
 export default Home

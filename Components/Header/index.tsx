@@ -2,34 +2,60 @@ import Styles from './styles.module.scss';
 import NavBar from './NavBar';
 import Title from './Title';
 import MenuHamburguer from './MenuHamburguer';
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const Header = () => {
 
     const [hamburguerActive, setHamburguerActive] = useState(false);
+    const [shadow, setShadow] = useState('none');
+    const articleRef = useRef() as React.MutableRefObject<HTMLElement>;
+
+
+    useEffect(() => {
+        const scrollPage = () => {
+            const article = articleRef.current;
+                
+            if (article !== null) {        
+                const { y } = article.getBoundingClientRect();
+                
+                (y < 0) 
+                  ?setShadow('0px .15px 2px 0px white') 
+                  :setShadow('none');
+            }
+        } 
+
+        window.addEventListener('scroll', scrollPage);
+    }, []);
+
 
     return(
-        <header className={Styles['header']}>
+        <header 
+            className = {Styles['header']}
+            ref = {articleRef}
+        >
             <NavBar
                 hamburguerActive = {hamburguerActive}
                 setHamburguerActive = {setHamburguerActive}
+                shadow = {shadow}
             />
+            
             {hamburguerActive && (
                 <MenuHamburguer/>
             )}
-            <section className={Styles['header__section']}>
+        
+            <section className = {Styles['header__section']}>
                 <Title/>
-                <div className={Styles['section__container']}>
-                    <p className={Styles['section__container--description']}>
+                <div className = {Styles['section__container']}>
+                    <p className = {Styles['section__container--description']}>
                         Hola soy Ivan un desarrollador web especializado en el front-end
                     </p>
                 </div>
                 <div className={Styles['section__container']}>
                     <a 
-                        className={Styles['section__container--button']}
-                        rel="noopener noreferrer"
-                        target = "_blank"
-                        href="https://drive.google.com/file/d/1KKdpfGbNIeLbHcgbchKrMalt7wD0JFvM/view?usp=sharing"
+                        className = {Styles['section__container--button']}
+                        rel = 'noopener noreferrer'
+                        target = '_blank'
+                        href = 'https://drive.google.com/file/d/1KKdpfGbNIeLbHcgbchKrMalt7wD0JFvM/view?usp=sharing'
                         >
                         Curriculum Vitae
                     </a>

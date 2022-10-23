@@ -2,6 +2,7 @@
   --dark-color:  #0C1013;
   --text-white: white;
   --text-gray: #9b9d9f;
+  --max-width: 1400px;
 }
 
 *{
@@ -34,6 +35,18 @@ body{
   width: 100%;
   height: auto;
 }
+
+#APP{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: var(--max-width);
+}
+
 
 p,
 a,
