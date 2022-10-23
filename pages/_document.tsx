@@ -18,6 +18,9 @@ import Document, {
         <Html lang='es'>
             <title>Front-end Developer</title>
           <Head>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
             <meta name='author' content='Carlos Ivan Ochoa Gomez, CIOG' />
             <meta name='robots' content='index, follow' />
 
