@@ -55,7 +55,7 @@ const Header = () => {
                         className = {Styles['section__container--button']}
                         rel = 'noopener noreferrer'
                         target = '_blank'
-                        href = 'https://drive.google.com/file/d/1KKdpfGbNIeLbHcgbchKrMalt7wD0JFvM/view?usp=sharing'
+                        href = 'https://drive.google.com/file/d/1D7Kvarlvl1g41khAhFjjV4i8uNmfXuM0/view?usp=sharing'
                         >
                         Curriculum Vitae
                     </a>
