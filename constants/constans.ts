@@ -65,6 +65,14 @@ const templateButton: Template[] = [
         content: "",
         id: 6,
     },
+    {
+        title: 'Video',
+        tag: ['<video>', '</video>'],
+        color: 'linear-gradient(to right top, #d60000, #f30039, #ff006b, #ff00a3, #ff00de)',
+        permanent: false,
+        content: "",
+        id: 7,
+    },
 ]
 
 
