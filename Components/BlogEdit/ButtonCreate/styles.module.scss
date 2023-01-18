@@ -1,0 +1,71 @@
+.button {
+	width: 95%;
+	height: 60px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #2c9caf;
+	transition: all 1000ms;
+	font-size: 15px;
+	position: relative;
+	overflow: hidden;
+	outline: 1.5px solid #2c9caf;
+	cursor: pointer;
+
+	&:focus{
+		outline: 2px solid black;
+	}
+
+}
+
+
+.draw-border {
+	box-shadow: inset 0 0 0 4px #2c9caf;
+	color: #2c9caf;
+	transition: color 0.25s 0.0833333333s;
+	position: relative;
+
+	&::before, &::after{
+		border: 0 solid transparent;
+		box-sizing: border-box;
+		content: "";
+		pointer-events: none;
+		position: absolute;
+		width: 0;
+		height: 0;
+		bottom: 0;
+		right: 0;			
+	}
+
+	&::before{
+		border-bottom-width: 4px;
+		border-left-width: 4px;	
+	}
+
+	&::after{
+		border-top-width: 4px;
+		border-right-width: 4px;
+	}
+
+	&:hover{
+		color: black;
+	}
+}
+  
+ 
+.draw-border:hover::before, .draw-border:hover::after {
+	border-color: black;
+	transition: border-color 0s, width 0.25s, height 0.25s;
+	width: 100%;
+	height: 100%;
+}
+ 
+.draw-border:hover::before {
+	transition-delay: 0s, 0s, 0.25s;
+}
+ 
+.draw-border:hover::after {
+	transition-delay: 0s, 0.25s, 0s;
+}
