@@ -1,0 +1,104 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    gap: 2%;
+}
+
+.main__section--text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 78%;
+    height: 90vh;
+    min-height: 500px;
+    max-height: 90vh;
+    padding: 15px 10px;
+    background-color: #CEF6FF;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.main__section--buttons{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    min-height: 90vh;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.main__section--buttons-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 80vh;
+    padding: 10px 0;
+    background-color: #CEF6FF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.button__generate {
+    /* From uiverse.io by @kirzin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    width: 220px;
+    height: 60px;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    z-index: 1;
+    user-select: none;
+    animation: animation 16s linear infinite;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+        background-size: 400%;
+        border-radius: 35px;
+        transition: 1s;
+        filter: blur(20px);
+    }
+}
+
+
+
+@keyframes animation {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 400%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
