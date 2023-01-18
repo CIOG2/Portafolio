@@ -10,7 +10,7 @@
     line-height: 4rem;
 }
 
-.title__text_1{
+.title__text--1{
     font-size: 5rem;
     font-weight: 800;
     background-clip: text;
@@ -48,7 +48,7 @@
 
 
 @media (min-width: 400px) {
-    .title__text_1,
+    .title__text--1,
     .title__text--2{
         font-size: 5.5rem;
     }    
@@ -60,7 +60,7 @@
 
 
 @media (min-width: 550px) {
-    .title__text_1,
+    .title__text--1,
     .title__text--2{
         font-size: 7rem;
     }    
@@ -72,7 +72,7 @@
 
 
 @media (min-width: 770px) {
-    .title__text_1,
+    .title__text--1,
     .title__text--2{
         font-size: 9rem;
     }    
@@ -86,7 +86,7 @@
 
 
 @media (min-width: 970px) {
-    .title__text_1,
+    .title__text--1,
     .title__text--2{
         font-size: 12rem;
     }    
@@ -98,7 +98,7 @@
 }
 
 @media (min-width: 1190px) {
-    .title__text_1,
+    .title__text--1,
     .title__text--2{
         font-size: 10rem;
     }

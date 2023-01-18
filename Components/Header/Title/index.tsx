@@ -5,7 +5,7 @@ const Title = () => {
     return(
         <div className = {Styles['section__container']}>
             <h1 className = {Styles['title']}>
-                <span className = {Styles['title__text_1']}>
+                <span className = {Styles['title__text--1']}>
                     Front-end 
                 </span>
                     <br />
