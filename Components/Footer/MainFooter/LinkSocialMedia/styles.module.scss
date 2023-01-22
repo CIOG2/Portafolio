@@ -1,0 +1,19 @@
+$size: 40px;
+
+.link{
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+}
+
+.image{
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .3s;
+}
+
+.image:hover{
+    box-shadow: 0px 0px 10px 0px white;
+}
