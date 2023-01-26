@@ -10,26 +10,23 @@
     line-height: 4rem;
 }
 
-.title__text--1{
+.title__text{
     font-size: 5rem;
     font-weight: 800;
     background-clip: text;
     color: transparent;  
     background-size: 400%;
+}
+
+.title__text--1{
     animation: animation 16s linear infinite;
     background-image: linear-gradient(to right, #fb5d7f, #f8418e, #ee24a3, #d90bbd, #b51bd9, #d200ca, #e900ba, #fb00ab, #ff4d75, #ff8c55, #fbbe59, #fb5d7f, #f8418e, #ee24a3, #d90bbd, #b51bd9, #d200ca, #e900ba, #fb00ab, #ff4d75, #ff8c55, #fbbe59, #e0e786);
 }
 
 .title__text--2{
-    font-size: 5rem;
-    font-weight: 800;
-    background-clip: text;
-    color: transparent;  
-    background-size: 400%;
     animation: animation 19s linear infinite;
     background-image: linear-gradient(to right, #523aff, #0080ff, #00a9ff, #00c9ff, #00e3e5, #2deed9, #56f7ca, #7dffb7, #61ff9e, #46ff80, #29ff5b, #00ff21, #0080ff, #00a9ff, #00c9ff, #00e3e5, #2deed9, #56f7ca, #7dffb7, #61ff9e, #46ff80, #29ff5b, #00ff21);
 }
-
 
 @keyframes animation {
     0% {
@@ -48,8 +45,7 @@
 
 
 @media (min-width: 400px) {
-    .title__text--1,
-    .title__text--2{
+    .title__text{
         font-size: 5.5rem;
     }    
         
@@ -60,8 +56,7 @@
 
 
 @media (min-width: 550px) {
-    .title__text--1,
-    .title__text--2{
+    .title__text{
         font-size: 7rem;
     }    
        
@@ -72,8 +67,7 @@
 
 
 @media (min-width: 770px) {
-    .title__text--1,
-    .title__text--2{
+    .title__text{
         font-size: 9rem;
     }    
        
@@ -86,8 +80,7 @@
 
 
 @media (min-width: 970px) {
-    .title__text--1,
-    .title__text--2{
+   .title__text{
         font-size: 12rem;
     }    
        
@@ -98,13 +91,11 @@
 }
 
 @media (min-width: 1190px) {
-    .title__text--1,
-    .title__text--2{
+    .title__text{
         font-size: 10rem;
     }
 
     .title{
         line-height: 8rem;
     }
-
 }
