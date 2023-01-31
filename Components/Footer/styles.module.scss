@@ -15,16 +15,42 @@
 
 .footer__section{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'main'
+    'contact'
+    'another';
     width: 100%;
     height: 100%;
     padding: 30px 0px;
+    justify-items: center;
+    
+    @media (min-width: 550px){
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 'main contact'
+        'main another'; 
+    }
+    
+    @media (min-width: 800px){
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
-.footer__section div{
+.footer__section > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    // border: white 1px solid;
+    max-width: 350px;
+    margin: 10px 0 30px 0;
+    @media (min-width: 730px){
+        margin: 0px;
+        height: 200px;
+    }
 }
 
 .footer__footer--text{
@@ -34,4 +60,66 @@
 
 .footer__footer--text a:hover{
     text-decoration: underline;
+}
+
+//------Grid_Areas--------
+.footer__section--contact{
+    grid-area: contact;
+}
+.footer__section > main{
+    grid-area: main;
+}
+.footer__section--another{
+    grid-area: another;
+}
+//------Grid_Areas--------
+
+
+.footer__section--title{
+    font-size: 2.2rem;
+    color: var(--text-white);
+    margin-bottom: 15px;
+}
+
+.footer__section--ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    margin-left: 50px;
+}
+
+.footer__section--parrafo{
+    max-width: 250px;
+    
+    @media (min-width: 800px){
+        max-width: 320px;
+    }
+}
+
+.footer__section--input{
+    width: 100%;
+    height: 37px;
+    padding-left: 10px;
+    outline: none;
+    transition: all .5s;
+    border: none;
+    background-color: var(--dark-color);
+    font-size: 1.5rem;
+    color: var(--text-white);
+    box-shadow: 0px 0px 0px 1.5px var(--text-white);
+}
+
+.footer__section--input:focus,
+.footer__section--input:hover{
+    box-shadow: 0px 0px 0px 2.5px var(--text-white);
+}
+
+.footer__section--button{
+    height: 40px;
+    background-color: hotpink;
+    color: var(--text-white);
+    font-size: 2rem;
+
+    font-weight: 600;
 }
