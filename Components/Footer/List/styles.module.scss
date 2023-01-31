@@ -1,0 +1,15 @@
+.LI{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.LI > a{
+    color: rgb(201, 201, 201);
+    transition: all .5s;}
+
+.LI > a:hover{
+    color: var(--text-white);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .7);
+}
