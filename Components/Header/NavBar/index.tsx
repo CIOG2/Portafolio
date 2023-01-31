@@ -57,7 +57,7 @@ const NavBar: FC<Props> = ({hamburguerActive, setHamburguerActive, shadow}) => {
                     </h3>
                 </div>
                 <div className = {Styles['navbar__container_links']}>
-                    <a className = {Styles['link']} href='#'>Sobre Mi</a>
+                    <a className = {Styles['link']} href='#sobre-mi'>Sobre Mi</a>
                     <a className = {Styles['link']} href='#'>Experiencia</a>
                     <a className = {Styles['link']} href='#'>Contacto</a>
                 </div>
