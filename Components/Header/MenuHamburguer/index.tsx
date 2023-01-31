@@ -3,7 +3,20 @@ import { useRef } from 'react'
 
 const MenuHamburguer = () => {
 
-    const nombresLink = ['Sobre Mi', 'Experiencia', 'Contacto']
+    const nombresLink = [
+        {
+            value: 'Sobre Mi',
+            url: '#sobre-mi',
+        },
+        {
+            value: 'Experiencia',
+            url: '',
+        },
+        {
+            value: 'Contacto',
+            url: '',
+        },
+    ]
     const container = useRef<HTMLDivElement>(null); 
 
     setTimeout(() => {
@@ -16,13 +29,13 @@ const MenuHamburguer = () => {
             ref = {container} 
             className = {Styles['hamburguer__menu']}
         >
-            {nombresLink.map((name, index) =>(
+            {nombresLink.map((item, index) =>(
                 <a 
                     key = {index}
-                    href = '#'
+                    href = {item.url}
                     className = {Styles['link']}
                 >
-                    {name}
+                    {item.value}
                 </a>
             ))}
         </div>
