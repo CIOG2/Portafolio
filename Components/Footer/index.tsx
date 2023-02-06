@@ -59,7 +59,7 @@ const Footer = () => {
                         <button
                             className = {Styles['footer__section--button']}    
                         >
-                            Suscribirse
+                            SUSCRIBIRSE
                         </button>
                     </div>
                 </div>
