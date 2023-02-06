@@ -3,10 +3,14 @@ import Styles from './styles.module.scss';
 const AboutMe = () => {
     
     return (
-        <section className = {Styles['section']}  id='sobre-mi'>
-            <h2  className = {Styles['section__title']}>
-                Sobre Mi
-            </h2>
+        <section className = {Styles['section']}>
+            <div className={Styles['container']}>
+                <div className={Styles['relleno']} id='sobre-mi'>
+                </div>
+                <h2  className = {Styles['section__title']}>
+                    Sobre Mi
+                </h2>
+            </div>
             {/* <p className = {Styles['section__text']}>
                 Hola soy Ivan un desarrollador web especializado en el front-end
             </p> */}
