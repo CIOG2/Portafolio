@@ -7,7 +7,7 @@ import { useEffect, useState, useRef } from 'react';
 const Header = () => {
 
     const [hamburguerActive, setHamburguerActive] = useState(false);
-    const [shadow, setShadow] = useState('none');
+    const [styelesNav, setStyelesNav] = useState({});
     const articleRef = useRef() as React.MutableRefObject<HTMLElement>;
 
 
@@ -19,8 +19,11 @@ const Header = () => {
                 const { y } = article.getBoundingClientRect();
                 
                 (y < 0) 
-                  ?setShadow('0px .15px 2px 0px white') 
-                  :setShadow('none');
+                  ?setStyelesNav({
+                    boxShadow:'0px .15px 2px 0px white',
+                    backgroundColor: '#07090b',
+                    }) 
+                  :setStyelesNav({});
             }
         } 
 
@@ -36,7 +39,7 @@ const Header = () => {
             <NavBar
                 hamburguerActive = {hamburguerActive}
                 setHamburguerActive = {setHamburguerActive}
-                shadow = {shadow}
+                styelesNav = {styelesNav}
             />
             
             {hamburguerActive && (

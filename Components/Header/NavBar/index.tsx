@@ -4,10 +4,10 @@ import { useState, useEffect, useRef, FC } from 'react'
 interface Props {
     hamburguerActive: boolean;
     setHamburguerActive: any;
-    shadow: string;
+    styelesNav: object;
 }
 
-const NavBar: FC<Props> = ({hamburguerActive, setHamburguerActive, shadow}) => {
+const NavBar: FC<Props> = ({hamburguerActive, setHamburguerActive, styelesNav}) => {
 
     const buttonHamburguer = useRef<HTMLButtonElement>(null);
     const [hamburguer, setHamburguer] = useState(true);
@@ -44,7 +44,7 @@ const NavBar: FC<Props> = ({hamburguerActive, setHamburguerActive, shadow}) => {
 
     return(
         <section
-            style = {{boxShadow: shadow}}
+            style = {styelesNav}
             className = {Styles['section__navbar']}
         >
             <nav className = {Styles['navbar']}>
